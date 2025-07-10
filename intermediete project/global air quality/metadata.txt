@@ -1,0 +1,73 @@
+parameter 
+
+Date	City	CO	NO2	SO2	O3	PM2.5	PM10	AQI
+
+
+🌫️ Gas dan Partikel Polutan
+Singkatan	Nama Lengkap		Penjelasan
+CO		Karbon Monoksida		Gas beracun tanpa warna dan bau. Dihasilkan dari pembakaran tidak sempurna bahan bakar (misalnya knalpot mobil). Dapat mengganggu kemampuan darah mengikat oksigen.
+CO₂		Karbon Dioksida			Gas rumah kaca yang dihasilkan dari respirasi, pembakaran bahan fosil. Tidak beracun dalam konsentrasi rendah, tapi berkontribusi pada pemanasan global.
+NO₂		Nitrogen Dioksida		Gas beracun berwarna cokelat kemerahan, berasal dari pembakaran kendaraan dan industri. Dapat menyebabkan iritasi paru-paru dan masalah pernapasan.
+SO₂		Sulfur Dioksida			Gas yang berasal dari pembakaran batu bara atau minyak. Menyebabkan iritasi tenggorokan, asma, dan hujan asam.
+O₃		Ozon (permukaan)		Bukan ozon pelindung di atmosfer atas. Di permukaan bumi, ozon terbentuk dari reaksi kimia antara NOx dan VOC dengan sinar matahari. Dapat merusak paru-paru.
+
+🌫️ Partikulat
+Singkatan	Nama Lengkap		Penjelasan
+PM2.5		Partikulat ≤ 2.5 µm	Debu halus berukuran sangat kecil, bisa masuk ke paru-paru dan aliran darah. Sumber: kendaraan, industri, asap rokok. Berbahaya bagi kesehatan.
+PM10		Partikulat ≤ 10 µm	Partikel yang lebih besar dari PM2.5 tapi masih cukup kecil untuk masuk saluran napas. Bisa berasal dari debu, asap, dan polusi udara lainnya.
+
+🌍 AQI – Air Quality Index (Indeks Kualitas Udara)
+AQI adalah angka indeks yang merangkum keseluruhan tingkat polusi udara berdasarkan beberapa parameter di atas.
+
+Nilainya biasanya berkisar dari 0 (baik) sampai 500 (berbahaya).
+
+Kategori AQI				Rentang Nilai	Kualitas Udara					Dampak Kesehatan
+Baik					0–50		Udara bersih					Tidak berdampak
+Sedang					51–100		Boleh untuk kebanyakan orang			Beberapa orang sensitif bisa terpengaruh ringan
+Tidak Sehat untuk Kelompok Sensitif	101–150		Rentan bagi penderita asma, anak, lansia	Disarankan menghindari aktivitas luar
+Tidak Sehat				151–200		Bisa berbahaya					Semua orang bisa terdampak
+Sangat Tidak Sehat			201–300		Berbahaya					Kondisi darurat kesehatan
+Berbahaya				301–500		Sangat berbahaya				Wajib tinggal di dalam ruangan
+
+kota : brasilia, cairo, dubai, london, new york, sydney
+
+yang ingin diteliti:
+
+- Bagaimana pola harian (per jam) dari konsentrasi gas polutan (CO, NO₂, SO₂, O₃) dan partikulat (PM2.5, PM10) di masing-masing kota?
+  Tujuan: Mengidentifikasi jam-jam tertentu ketika tingkat polusi udara meningkat atau menurun, serta mengevaluasi kemungkinan hubungan dengan aktivitas manusia 
+  	  (misalnya, peningkatan pada jam sibuk).
+
+- Bagaimana hubungan antara konsentrasi gas polutan dan partikulat dengan nilai AQI?
+  Tujuan: Menganalisis apakah peningkatan kadar gas dan partikulat berkorelasi langsung dengan kenaikan nilai AQI (semakin buruk kualitas udara)
+
+- Apakah ada pola keterkaitan antara jam aktivitas manusia dan peningkatan tingkat polusi udara serta AQI?
+  Tujuan: Mengaitkan pola aktivitas masyarakat (misal: jam berangkat kerja, istirahat siang, dan pulang kerja) dengan fluktuasi tingkat polusi udara.
+
+- Apakah terdapat hubungan yang signifikan antara gas polutan dan partikulat (PM2.5 & PM10)?
+  Tujuan: Menentukan apakah peningkatan gas polutan menyebabkan peningkatan partikulat (karena reaksi kimia di atmosfer, dll)
+
+- Jam berapa saja dalam sehari yang dapat dikategorikan sebagai waktu yang ‘aman’ untuk beraktivitas berdasarkan AQI?
+  Tujuan: Melakukan klasifikasi jam berdasarkan kategori AQI (baik, sedang, tidak sehat, dll) untuk menyarankan waktu terbaik bagi manusia melakukan aktivitas luar ruangan.
+
+- Bagaimana prediksi kualitas udara (AQI) di tahun 2025 berdasarkan pola data tahun 2024?
+  Tujuan: Mengembangkan model prediktif (seperti time series forecasting) untuk memproyeksikan tren kualitas udara di tahun berikutnya.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

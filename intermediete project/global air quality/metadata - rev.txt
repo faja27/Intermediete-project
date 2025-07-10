@@ -1,0 +1,92 @@
+parameter 
+
+Date	City	CO	NO2	SO2	O3	PM2.5	PM10	AQI
+
+
+🌫️ Gas dan Partikel Polutan
+Singkatan	Nama Lengkap		Penjelasan
+CO		Karbon Monoksida		Gas beracun tanpa warna dan bau. Dihasilkan dari pembakaran tidak sempurna bahan bakar (misalnya knalpot mobil). Dapat mengganggu kemampuan darah mengikat oksigen.
+CO₂		Karbon Dioksida			Gas rumah kaca yang dihasilkan dari respirasi, pembakaran bahan fosil. Tidak beracun dalam konsentrasi rendah, tapi berkontribusi pada pemanasan global.
+NO₂		Nitrogen Dioksida		Gas beracun berwarna cokelat kemerahan, berasal dari pembakaran kendaraan dan industri. Dapat menyebabkan iritasi paru-paru dan masalah pernapasan.
+SO₂		Sulfur Dioksida			Gas yang berasal dari pembakaran batu bara atau minyak. Menyebabkan iritasi tenggorokan, asma, dan hujan asam.
+O₃		Ozon (permukaan)		Bukan ozon pelindung di atmosfer atas. Di permukaan bumi, ozon terbentuk dari reaksi kimia antara NOx dan VOC dengan sinar matahari. Dapat merusak paru-paru.
+
+🌫️ Partikulat
+Singkatan	Nama Lengkap		Penjelasan
+PM2.5		Partikulat ≤ 2.5 µm	Debu halus berukuran sangat kecil, bisa masuk ke paru-paru dan aliran darah. Sumber: kendaraan, industri, asap rokok. Berbahaya bagi kesehatan.
+PM10		Partikulat ≤ 10 µm	Partikel yang lebih besar dari PM2.5 tapi masih cukup kecil untuk masuk saluran napas. Bisa berasal dari debu, asap, dan polusi udara lainnya.
+
+🌍 AQI – Air Quality Index (Indeks Kualitas Udara)
+AQI adalah angka indeks yang merangkum keseluruhan tingkat polusi udara berdasarkan beberapa parameter di atas.
+
+Nilainya biasanya berkisar dari 0 (baik) sampai 500 (berbahaya).
+
+Kategori AQI				Rentang Nilai	Kualitas Udara					Dampak Kesehatan
+Baik					0–50		Udara bersih					Tidak berdampak
+Sedang					51–100		Boleh untuk kebanyakan orang			Beberapa orang sensitif bisa terpengaruh ringan
+Tidak Sehat untuk Kelompok Sensitif	101–150		Rentan bagi penderita asma, anak, lansia	Disarankan menghindari aktivitas luar
+Tidak Sehat				151–200		Bisa berbahaya					Semua orang bisa terdampak
+Sangat Tidak Sehat			201–300		Berbahaya					Kondisi darurat kesehatan
+Berbahaya				301–500		Sangat berbahaya				Wajib tinggal di dalam ruangan
+
+kota : brasilia, cairo, dubai, london, new york, sydney
+
+yang ingin diteliti:
+
+- Latar Belakang
+  Jelaskan pentingnya kualitas udara terhadap kesehatan masyarakat.
+  Soroti bagaimana AQI memengaruhi aktivitas luar ruangan (olahraga, perjalanan, kerja lapangan, dll).
+  Paparkan isu global tentang polusi di kota besar.
+
+- Rumusan Masalah
+  1. Bagaimana tren kualitas udara harian di 6 kota besar sepanjang 2024?
+  2. Kapan waktu-waktu dengan kualitas udara tidak aman?
+  3. Dapatkah kita mengklasifikasikan waktu sebagai "aman" atau "berisiko" untuk aktivitas luar ruangan?
+
+- Tujuan Penelitian
+  1. Mengklasifikasikan waktu (harian atau per jam, jika tersedia) menjadi kategori “aman” dan “berisiko” berdasarkan nilai AQI.
+  2. Menyusun rekomendasi waktu terbaik untuk aktivitas luar ruangan berdasarkan data tahunan.
+
+===================================================================================================================================================
+===================================================================================================================================================
+
+air-quality-classification/
+│
+├── data/
+│   └── air_quality_2024.csv       # Dataset utama (1 tahun, 6 kota)
+│
+├── notebooks/
+│   └── 01_exploratory_analysis.ipynb        # EDA: statistik, visualisasi tren
+│   └── 02_aqi_labeling_and_classification.ipynb   # Label kategori AQI, klasifikasi waktu
+│   └── 03_city_comparison.ipynb             # Perbandingan antar kota
+│
+├── src/
+│   ├── preprocessing.py            # Fungsi pembersihan dan persiapan data
+│   ├── labeling.py                # Fungsi penentuan kategori AQI
+│   ├── visualization.py           # Fungsi plotting dan heatmap
+│
+├── output/
+│   ├── figures/                   # Gambar-gambar hasil visualisasi
+│   └── result_summary.csv         # Ringkasan hasil klasifikasi per kota
+│
+├── requirements.txt               # Daftar library yang dibutuhkan
+├── README.md                      # Penjelasan singkat proyek
+└── .gitignore                     # File/folder yang tidak perlu di-push
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
