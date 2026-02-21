@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Data & models (jangan dipush)
+*.keras
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+saved_model/
+models/
+data/
+dataset/
+datasets/
+
+# (opsional) folder contoh kalau isinya data besar
+contoh/
